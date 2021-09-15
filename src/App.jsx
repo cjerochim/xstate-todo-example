@@ -45,7 +45,7 @@ const CreateListView = ({ actor }) => {
             label="Category"
             type="text"
             value={category}
-            onChange={(e) => send({ type: "FOCUS", payload: e.target.value })}
+            onChange={(e) => send({ type: "INPUT", payload: e.target.value })}
           />
           <Button full>Next</Button>
         </form>

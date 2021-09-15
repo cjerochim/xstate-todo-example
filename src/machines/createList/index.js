@@ -11,7 +11,7 @@ const inputStatechart = {
   states: {
     init: {
       after: {
-        10: "focus",
+        200: "focus",
       },
     },
     focus: {
@@ -47,7 +47,7 @@ const createListMachine = createMachine(
       },
       celebrate: {
         after: {
-          00: "complete",
+          700: "complete",
         },
       },
       complete: {
